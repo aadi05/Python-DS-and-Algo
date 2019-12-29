@@ -90,7 +90,7 @@ class BST:
             self.inorderTraversal(root.right)
 
 bst = BST()
-arr = [14, 34, 30, 7, 30, 12, 29, 29, 43, 47, 27, 10, 4, 41, 20]
+arr = [14, 35, 30, 7, 30, 12, 29, 29, 43, 47, 27, 10, 4, 41, 20]
 
 for item in arr:
     bst.insert(item)
