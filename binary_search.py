@@ -6,11 +6,10 @@ def binary_search(arr, item):
         mid = (lower+upper)//2
         if arr[mid] == item:
             return mid
+        elif arr[mid] > item:
+            upper = mid - 1
         else:
-            if arr[mid] > item:
-                upper = mid - 1
-            else:
-                lower = mid + 1
+            lower = mid + 1
     return None
 
 found_index = binary_search([4,5,7,8,12,34,56,78,89], 12)
